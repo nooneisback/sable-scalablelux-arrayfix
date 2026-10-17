@@ -1,0 +1,13 @@
+{
+  "itemGroup.sablescalableluxcompat": "Example Mod Tab",
+  "block.sablescalableluxcompat.example_block": "Example Block",
+  "item.sablescalableluxcompat.example_item": "Example Item",
+
+  "sablescalableluxcompat.configuration.title": "sable-scalablelux-compat Configs",
+  "sablescalableluxcompat.configuration.section.sablescalableluxcompat.common.toml": "sable-scalablelux-compat Configs",
+  "sablescalableluxcompat.configuration.section.sablescalableluxcompat.common.toml.title": "sable-scalablelux-compat Configs",
+  "sablescalableluxcompat.configuration.items": "Item List",
+  "sablescalableluxcompat.configuration.logDirtBlock": "Log Dirt Block",
+  "sablescalableluxcompat.configuration.magicNumberIntroduction": "Magic Number Text",
+  "sablescalableluxcompat.configuration.magicNumber": "Magic Number"
+}
