@@ -1,25 +1,11 @@
+# AI disclosure
+This project is almost entirely AI generated. I'm not going to hide this. I just want to play the game with all the mods I want, not spend 2 weeks reading someone else's code. If you're wondering what I used, it's GLM-5.3 through 9router and headroom.
 
-Installation information
-=======
+# What this does?
+Sable and ScalableLux are incompatible due to the way Sable reports block positions. ScalableLux thinks it has to update lighting at a location that isn't loaded, which causes a crash with ArrayIndexOutOfBoundsException. This mod solves this by simply ignoring these wrong updates.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+# How to install
+Tested with Sable 2.0.6 and 0.3.0.
+Build the mod with gradlew build. Make sure you gradlew --version returns Java 21.
+The built mod will be in builds/libs/*.jar
+This mod does not modify Sable's explicit incompatibility with ScalableLux. You'll still have to either edit Sable's jar file directly, mess around with fml.toml, or install a mod like Scalable Lux x Sable Compat.
